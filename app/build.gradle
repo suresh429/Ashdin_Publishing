@@ -4,10 +4,10 @@ android {
 
     signingConfigs {
         release {
-            storeFile file('E:\\Android projects\\Omics Projects\\Scholars Research Library\\jks\\scholarsresearchlibrary.jks')
-            storePassword 'Scholars@123'
-            keyAlias 'Scholars@123'
-            keyPassword 'Scholars@123'
+            storeFile file('E:\\Android projects\\Omics Projects\\Ashdin Publishing\\jks\\Ashdin.jks')
+            storePassword 'Ashdin@123'
+            keyAlias 'Ashdin'
+            keyPassword 'Ashdin@123'
         }
     }
     compileSdkVersion 30
