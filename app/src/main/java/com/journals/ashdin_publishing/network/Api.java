@@ -6,11 +6,11 @@ import com.journals.ashdin_publishing.model.ArchiveResponse;
 import com.journals.ashdin_publishing.model.CategoryResponse;
 import com.journals.ashdin_publishing.model.ContactResponse;
 import com.journals.ashdin_publishing.model.CurrentIssueResponse;
+import com.journals.ashdin_publishing.model.EditorialBoardResponse;
 import com.journals.ashdin_publishing.model.InPressResponse;
 import com.journals.ashdin_publishing.model.JournalHomeResponse;
 import com.journals.ashdin_publishing.model.JournalsListResponse;
 import com.journals.ashdin_publishing.model.VolumeIssueResponse;
-
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -58,6 +58,9 @@ public interface Api {
     @POST("contactapi.php")
     Call<ContactResponse> getContactDisplay(@Body JsonObject jsonObject);
 
+    @Headers("Content-Type: application/json")
+    @POST("editorialboardapi.php")
+    Call<EditorialBoardResponse> getEditorialList(@Body JsonObject jsonObject);
 
 
 }
